@@ -13,20 +13,20 @@ const App = () => {
     dispatch(fetchApi())
   }, [])
 
-  if(lorem.isLoading) return <h2>Loading...</h2>
+  if(lorem.isLoading) return <h4>Loading...</h4>
 
   return (
     <div>
-        <h1 style={{textAlign: "center"}}>A short Narration of Lorem Ipsum</h1>
+        <h1 style={{textAlign: "center"}}>A short Naration of Lorem Ipsum</h1>
         <p style={{textAlign: "center"}}>Below contains a title and body</p>
         <div className="container">
           {
             lorem.data.length > 0 && lorem.data.map(text => {
             return (
-            <div key={text.id} className="card">
-              <p><strong>Title</strong>:{text.title}</p> 
+            <li key={text.id} className="card">
+              <h4><strong>Title</strong>:{text.title}</h4> 
               <p><strong>Body</strong>:{text.body}</p>
-            </div>
+            </li>
           )
           })
           }
