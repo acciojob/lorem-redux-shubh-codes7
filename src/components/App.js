@@ -18,13 +18,13 @@ const App = () => {
   return (
     <div>
         <h1 style={{textAlign: "center"}}>A short Naration of Lorem Ipsum</h1>
-        <p style={{textAlign: "center"}}>Below contains a title and body</p>
+        <p style={{textAlign: "center"}}>Below Contains A title and Body gotten froma random API, Please take your time to Review</p>
         <div className="container">
           {
             lorem.data.length > 0 && lorem.data.map(text => {
             return (
             <li key={text.id} className="card">
-              <h4><strong>Title</strong>:{text.title}</h4> 
+              <h4 className="title"><strong>Title</strong>:{text.title}</h4> 
               <p><strong>Body</strong>:{text.body}</p>
             </li>
           )

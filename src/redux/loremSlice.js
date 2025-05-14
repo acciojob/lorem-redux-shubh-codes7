@@ -8,7 +8,7 @@ export const fetchApi = createAsyncThunk("fetchApi", () => {
 const loremSlice = createSlice({
     name: "lorem",
     initialState: {
-        isLoading: false,
+        isLoading: true,
         isError: false,
         data: []
     },
